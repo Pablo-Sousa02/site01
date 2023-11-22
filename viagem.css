@@ -30,7 +30,7 @@ body{
 nav a:hover{
     
     transition: .1s;
-    text-decoration: underline;
+    color: rgba(38, 133, 221, 0.945);;
 }
   nav {
     
@@ -81,22 +81,23 @@ footer{
     justify-content: center;
     margin-left: 35%;
     margin-top: 10%; 
-    background-color: rgba(240, 248, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
+    
 }
 
 .input:focus{
-    border-color: rgb(255, 248, 146);
+    border-color: rgb(9, 132, 180);
 }
 .input:hover{
-    transition: .1s;
-    font-size: 18px;
+    transition: .2s;
+    
 }
 .btn{
     border-radius: 5px;
     border: 1px solid;
     border-color: #9e9d9d;
     cursor: pointer;
-    background-color: rgb(196, 167, 7);
+    background-color: rgb(7, 111, 196);
     color: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 5px;
@@ -105,7 +106,8 @@ footer{
 }
 .btn:hover{
     transition: .2s;
-    background-color: rgba(221, 194, 38, 0.945);
+    background-color: rgba(38, 133, 221, 0.945);
+    
 }
 @media (max-width: 768px) {
     footer {
@@ -118,7 +120,7 @@ footer{
         width: 55%;
         position: relative;
         right: 12%;
-        background-color: rgba(196, 196, 158, 0.226);
+        background-color: rgba(0, 0, 0, 0)
     }
 }
 @media (max-width: 768px) {
@@ -136,14 +138,20 @@ footer{
     display: flex;
     align-items: center;
     margin: 25px;
+    
 }
 .local{
-    margin: 10px;
+    margin: 20px;
     background-color: rgba(204, 204, 204, 0);
-    border: 1px solid;
-    border-color: aliceblue;
+    border: 1px solid black;
+    border-color: rgb(0, 0, 0);
     border-radius: 8px;
-    height: 30px;
+    height: 40px;
+    outline: none;
+    width: 200px;
+}
+.local:focus{
+    border-color: rgb(15, 170, 197);
 }
 .img{
     width: 1415px;
@@ -174,5 +182,30 @@ hr{
     hr {
         width: 65%;
         
+    }
+}
+.btnn{
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid black;
+    background: rgb(7, 111, 196);
+    color: #fff;
+    cursor: pointer;
+}
+.btnn:hover{
+    background-color: rgb(50, 121, 201);
+    transition: 0.2s;
+    
+}
+.promo{
+    width: 1415px;
+    margin-top: 100px;
+    position: relative;
+}
+@media (max-width: 768px) {
+    .promo {
+        width: 414px;
+        margin-top: 0px;
     }
 }
