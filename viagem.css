@@ -209,3 +209,14 @@ hr{
         margin-top: 0px;
     }
 }
+.d-blockw-100{
+        width: 1430px;
+        height: 500px;
+        position: relative;
+}
+@media (max-width: 768px) {
+    .d-blockw-100 {
+        width: 415px;
+        height: 158px;
+    }
+}
