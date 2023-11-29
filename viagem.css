@@ -165,7 +165,7 @@ hr{
     .dp-menu ul a {
         display: flex;
         position: relative;
-        left: 25%;
+        left: 20%;
         font-size: 11px;
         
         
@@ -174,7 +174,7 @@ hr{
 @media (max-width: 768px) {
     hr {
         width: 65%;
-        left: 40%;
+        left: 35%;
         bottom: 15px;
         position: relative;
     }
