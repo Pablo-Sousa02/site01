@@ -5,7 +5,6 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
 body{
     background-color: rgb(172, 207, 238);
     margin: 0;
@@ -15,17 +14,24 @@ body{
     display: flex;
     flex-direction: column;
 }
+header{
+  background-color: rgba(108, 176, 236, 0.959);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
 .dp-menu ul{
-    margin-left: 70%;
     list-style: none;
     position: relative;
+    text-align: center;
 }
 .dp-menu ul a{
     
     font-size: 20px;
     margin-inline: 25px;
     color: black;
-    scroll-behavior: smooth;
+    text-align: center;
+    
 
     
 }
@@ -36,8 +42,6 @@ nav a:hover{
     color: rgba(38, 133, 221, 0.945);;
 }
   nav {
-    
-    display: flex;
     justify-content: center;
     padding: 10px 0;
   }
@@ -166,20 +170,15 @@ hr{
 
 @media (max-width: 768px) {
     .dp-menu ul a {
-        display: flex;
-        position: relative;
-        left: 25%;
-        font-size: 11px;
-        
-        
+      text-align: center;
+      font-size: 11px;
+      margin-left: 0;
     }
 }
 @media (max-width: 768px) {
     hr {
-        width: 65%;
-        left: 40%;
+        width: 100%;
         bottom: 15px;
-        position: relative;
     }
 }
 .btnn{
