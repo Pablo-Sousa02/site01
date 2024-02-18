@@ -18,9 +18,9 @@ body{
     flex-direction: column;
 }
 header{
-  background-color: rgba(108, 176, 236, 0.959);
-  position: fixed;
+  background-color: #5f5f5f;
   width: 100%;
+  position: fixed;
   z-index: 10;
 }
 .dp-menu ul{
@@ -29,26 +29,24 @@ header{
     text-align: center;
 }
 .dp-menu ul a{
-    
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin-inline: 25px;
-    color: black;
+    color: #fff;
     text-align: center;
-    
-
-    
-}
-
-nav a:hover{
-    
-    transition: .1s;
-    color: rgba(38, 133, 221, 0.945);;
 }
   nav {
     justify-content: center;
     padding: 10px 0;
   }
-
+  .bi-person-circle:hover{
+    transform: scale(1.1);
+    transition: .2s;
+  }
+  .bi-house-door:hover{
+    transform: scale(1.1);
+    transition: .2s;
+  }
   nav a {
     text-decoration: none;
     margin: 0 20px;
@@ -119,10 +117,27 @@ footer{
     
 }
 @media (max-width: 768px) {
-    footer {
-     position: relative;
-     top: 50%;
+  footer {
+  position: relative;
+  top: 50%;
     }
+}
+@media (max-width: 768px) {
+  header {
+  position: fixed;
+  }
+}
+/*@media (max-width: 768px) {
+  .dp-menu {
+  position: fixed;
+  display: none;
+  }
+}*/
+@media (max-width: 768px) {
+  .img {
+  margin-top: 57px;
+  
+  }
 }
 @media (max-width: 768px) {
     .input  {
@@ -135,18 +150,18 @@ footer{
 @media (max-width: 768px) {
     .bt {
         position: relative;
-        left: 32%;
+        left: 29%;
         margin-top: 24px;
         width: 150px;
         
         
     }
 }
-.inputt{
-    flex-direction: column;
+.inputt{ 
+  margin-top: 100px;
+    margin-left: 150px;
     display: flex;
     align-items: center;
-    margin: 25px;
 }
 .local{
     margin: 20px;
@@ -404,7 +419,15 @@ p {
   margin-left: 8px;
   color: #fff;
 }
-
+@media (max-width: 768px) {
+  .inputt {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 25px;
+  }
+}
 @media screen and (max-width: 520px) {
   .swiper-button-next:hover:before,
 .swiper-button-prev:hover:before {
@@ -413,20 +436,90 @@ p {
 }
 @media (max-width: 768px) {
   .swiper-container {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-     position: relative;
-     width: 50%;
-     right: 52%;
-     margin: 77%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+  right: 52%;
+  margin: 77%;
   }
 }
 @media screen and (max-width: 520px) {
   body {
-    height: 1vh;
-    margin: 0;
+  height: 0;
+  margin: o;
     
+  }
+}
+.container-sobre{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.card {
+  width: 300px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 200px;
+}
+.card-btn{
+  background-color: rgb(3, 116, 46);
+  border: 1px solid;
+  border-radius: 8px;
+  margin: 15px;
+  margin-left: 80px;
+  color: white;
+  height: 50px;
+  width: 100px;
+}
+.card-btn:hover{
+  background-color: rgb(50, 197, 50);
+  transition: .3s;
+}
+.card img:hover{
+  opacity: 80%;
+  transition: .5s;
+  transform: scale(1.1);
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+}
+
+.card-content p {
+  color: #666;
+}
+h6{
+  background-color: #1670ac;
+  margin-top: 100px;
+  color: #ffff;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 18px;
+}
+@media (max-width: 768px) {
+  .container-sobre {
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #333;
+  border-radius: 18px;
+  margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .card{
+  margin: 10px;
   }
 }
