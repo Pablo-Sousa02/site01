@@ -18,7 +18,7 @@ body{
     flex-direction: column;
 }
 header{
-  background-color: #5f5f5f;
+  background-color: #5f5f5fdc;
   width: 100%;
   position: fixed;
   z-index: 10;
@@ -125,6 +125,7 @@ footer{
 @media (max-width: 768px) {
   header {
   position: fixed;
+  border-radius: 10px;
   }
 }
 /*@media (max-width: 768px) {
@@ -135,7 +136,7 @@ footer{
 }*/
 @media (max-width: 768px) {
   .img {
-  margin-top: 57px;
+  margin-top: 66px;
   
   }
 }
