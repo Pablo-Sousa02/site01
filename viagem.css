@@ -14,46 +14,103 @@ body{
     height: 100vh;
     -webkit-animation: gradient 15s ease infinite;
     animation: gradient 15s ease infinite;
-    display: flex;
-    flex-direction: column;
+
 }
-header{
-  background-color: #5f5f5fdc;
-  width: 100%;
-  position: fixed;
-  z-index: 10;
+header {
+  background-color: #333333da;
 }
-.dp-menu ul{
-    list-style: none;
-    position: relative;
-    text-align: center;
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
 }
-.dp-menu ul a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin-inline: 25px;
-    color: #fff;
-    text-align: center;
+.nav-bar .profile:hover{
+  color: #1670ac;
+  transition: .2s;
+  transform: scale(1.1);
 }
-  nav {
-    justify-content: center;
-    padding: 10px 0;
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-left: 350px;
+}
+
+.nav-item {
+  margin: 0 50px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+.nav-bar .profile {
+  color: rgb(255, 255, 255);
+  position: relative;
+  margin-left: 305px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 730px) {
+  .nav-bar {
+      padding: 1.5rem 4rem;
   }
-  .bi-person-circle:hover{
-    transform: scale(1.1);
-    transition: .2s;
+  .nav-item {
+      display: none;
   }
-  .bi-house-door:hover{
-    transform: scale(1.1);
-    transition: .2s;
+  .profile {
+      display: none;
   }
-  nav a {
-    text-decoration: none;
-    margin: 0 20px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    padding: 2px;
-  } 
+  .mobile-menu-icon {
+      display: block;
+  }
+  .mobile-menu-icon button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+  }
+  .mobile-menu ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 1rem;
+  }
+  .mobile-menu .nav-item {
+      display: block;
+      padding-top: 1.2rem;
+  }
+  .mobile-menu .profile {
+      display: block;
+      padding: 1rem 1rem;
+
+  }
+  .mobile-menu .profile {
+    color: rgb(255, 255, 255);
+    margin-left: 165px;
+  }
+  .open {
+      display: block;
+      background-color: #333;
+  }
+  }
+
 h1{
     text-align: center;
     color: #000000;
@@ -121,12 +178,8 @@ footer p{
   top: 50%;
     }
 }
-@media (max-width: 768px) {
-  header {
-  position: fixed;
-  border-radius: 10px;
-  }
-}
+
+
 /*@media (max-width: 768px) {
   .dp-menu {
   position: fixed;
@@ -135,7 +188,7 @@ footer p{
 }*/
 @media (max-width: 768px) {
   .img {
-  margin-top: 66px;
+  margin-top: 0px;
   
   }
 }
@@ -180,19 +233,13 @@ footer p{
 .img{
     width: 1415px;
     max-width: 100%;
+    margin-top: 10px;
 }
 
 hr{
     border-color: rgba(32, 95, 112, 0.959);
 }
 
-@media (max-width: 768px) {
-    .dp-menu ul a {
-      text-align: center;
-      font-size: 11px;
-      margin-left: 0;
-    }
-}
 @media (max-width: 768px) {
     hr {
         width: 100%;
@@ -464,7 +511,7 @@ p {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  margin-top: 200px;
+  margin-top: 50px;
 }
 .card-btn{
   background-color: rgb(3, 116, 46);
@@ -500,6 +547,9 @@ p {
 
 .card-content p {
   color: #666;
+}
+hr{
+  border-color: red;
 }
 h6{
   background-color: #1670ac;
