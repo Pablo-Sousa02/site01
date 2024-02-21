@@ -33,13 +33,13 @@ header {
 .nav-list {
   display: flex;
   align-items: center;
+  margin-left: 300px;
 }
 
 .nav-list ul {
   display: flex;
   justify-content: center;
   list-style: none;
-  margin-left: 350px;
 }
 
 .nav-item {
@@ -85,6 +85,7 @@ header {
       background-color: transparent;
       border: none;
       cursor: pointer;
+      
   }
   .mobile-menu ul {
       display: flex;
