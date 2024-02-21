@@ -14,12 +14,11 @@ body{
     height: 100vh;
     -webkit-animation: gradient 15s ease infinite;
     animation: gradient 15s ease infinite;
-
 }
 header {
-  background-color: #333333da;
+  background-color: #216ad8da;
+  box-shadow: 0px 3px 10px #464646;
 }
-
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -29,6 +28,9 @@ header {
   color: #1670ac;
   transition: .2s;
   transform: scale(1.1);
+}
+.profile{
+  right: 300px;
 }
 .nav-list {
   display: flex;
@@ -67,7 +69,6 @@ header {
   margin-left: 305px;
   cursor: pointer;
 }
-
 @media screen and (max-width: 730px) {
   .nav-bar {
       padding: 1.5rem 4rem;
