@@ -37,7 +37,13 @@ header {
   align-items: center;
   margin-left: 300px;
 }
-
+.logo-im{
+  overflow: hidden;
+  position: absolute;
+  justify-content: space-around;
+  margin-right: 700px;
+  top: -4%;
+}
 .nav-list ul {
   display: flex;
   justify-content: center;
@@ -109,7 +115,14 @@ header {
   }
   .open {
       display: block;
-      background-color: #333;
+      background-color: #216ad8da;
+  }
+  .logo-im{
+    flex-wrap: wrap;
+    position: absolute;
+    justify-content: space-around;
+    margin-left: 350px;
+    top: -5.5%;
   }
   }
 
@@ -126,12 +139,7 @@ p{
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-footer p{
-    margin-top: 25%;
-    background-color: #333;
-    padding: 50px;
-    color: #fff;
-}
+
 
 .input{
     width: 25%;
@@ -174,20 +182,6 @@ footer p{
     background-color: rgb(7, 77, 134);
     
 }
-@media (max-width: 768px) {
-  footer {
-  position: relative;
-  top: 50%;
-    }
-}
-
-
-/*@media (max-width: 768px) {
-  .dp-menu {
-  position: fixed;
-  display: none;
-  }
-}*/
 @media (max-width: 768px) {
   .img {
   margin-top: 0px;
@@ -277,13 +271,6 @@ hr{
     height: 158px;
     }
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
-* {
-  box-sizing: border-box;
-}
-
-
 h1 {
   margin: 0;
   font-weight: bold;
@@ -506,6 +493,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-color: #1670ac;
+  padding-bottom: 50px;
 }
 .card {
   width: 300px;
@@ -565,7 +554,7 @@ h6{
   .container-sobre {
   justify-content: space-around;
   flex-direction: column;
-  background-color: #333;
+  background-color: #1670ac;
   border-radius: 18px;
   margin-top: 30px;
   }
@@ -574,4 +563,75 @@ h6{
   .card{
   margin: 10px;
   }
+  .footer-container {
+    flex-direction: column;
+    display: block;
+    margin-left: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+footer {
+  background-color: #1670ac;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 100px;
+  box-shadow: 0px 3px 10px #464646;
+  border-radius: 30px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-item {
+  max-width: 300px;
+}
+
+.footer-item h3 {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+}
+
+.footer-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-item li {
+  margin-bottom: 8px;
+}
+
+.footer-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-item a:hover {
+  text-decoration: underline;
+}
+.dropbtn{
+  position:relative;
+  list-style: none;
+}
+.dropdown-content{
+  
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  z-index: 2;
+}
+.dropdown-content a{
+  padding: 12px 16px;
+  display: block;
+  background-color:#1670ac;
+  border-radius: 10px;
+  margin: 10px;
+  color: #fff;
+}
+.dropbtn:hover .dropdown-content{
+  display: block;
+  transition: .5s;
+  background-color: transparent;
 }
