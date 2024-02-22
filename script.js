@@ -28,3 +28,7 @@ var swiper = new Swiper('.swiper-container', {
         document.querySelector('.icon').src = "assets/img/close_white_36dp.svg";
     }
 }
+function comprar(){
+  let a = document.getElementById('card')
+  window.alert('Produto adicionado ao carrinho')
+}

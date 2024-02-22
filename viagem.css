@@ -26,8 +26,7 @@ header {
 }
 .nav-bar .profile:hover{
   color: #1670ac;
-  transition: .2s;
-  transform: scale(1.1);
+  transition: .3s;
 }
 .profile{
   right: 300px;
@@ -51,7 +50,7 @@ header {
 }
 
 .nav-item {
-  margin: 0 50px;
+  margin-left: 80px;
 }
 
 .nav-link {
@@ -105,11 +104,6 @@ header {
       padding-top: 1.2rem;
   }
   .mobile-menu .profile {
-      display: block;
-      padding: 1rem 1rem;
-
-  }
-  .mobile-menu .profile {
     color: rgb(255, 255, 255);
     margin-left: 165px;
   }
@@ -124,7 +118,12 @@ header {
     margin-left: 350px;
     top: -6%;
   }
+  .img {
+    position: relative;
+    right: 100px;
+    display: flex;
   }
+}
 
 h1{
     text-align: center;
@@ -183,12 +182,6 @@ p{
     
 }
 @media (max-width: 768px) {
-  .img {
-  margin-top: 0px;
-  
-  }
-}
-@media (max-width: 768px) {
     .input  {
         width: 55%;
         position: relative;
@@ -227,9 +220,11 @@ p{
     border-color: rgb(15, 170, 197);
 }
 .img{
-    width: 1415px;
-    max-width: 100%;
-    margin-top: 10px;
+    width: 80%;
+    margin-left: 140px;
+    margin-top: 20px;
+    box-shadow: #1670ac 0px 0px 10px;
+    border-radius: 20px;
 }
 
 hr{
@@ -465,7 +460,7 @@ p {
   }
 }
 @media screen and (max-width: 520px) {
-  .swiper-button-next:hover:before,
+.swiper-button-next:hover:before,
 .swiper-button-prev:hover:before {
     display: none;
   }
@@ -496,7 +491,7 @@ p {
   background-color: #1670ac;
   padding-bottom: 50px;
 }
-.card {
+#card {
   width: 300px;
   background-color: #f9f9f9;
   border-radius: 8px;
@@ -504,7 +499,7 @@ p {
   overflow: hidden;
   margin-top: 50px;
 }
-.card-btn{
+#card-btn{
   background-color: rgb(3, 116, 46);
   border: 1px solid;
   border-radius: 8px;
@@ -514,16 +509,16 @@ p {
   height: 50px;
   width: 100px;
 }
-.card-btn:hover{
+#card-btn:hover{
   background-color: rgb(50, 197, 50);
   transition: .3s;
 }
-.card img:hover{
+#card img:hover{
   opacity: 80%;
   transition: .5s;
   transform: scale(1.1);
 }
-.card img {
+#card img {
   width: 100%;
   height: auto;
 }
@@ -612,11 +607,11 @@ footer {
   text-decoration: underline;
 }
 .dropbtn{
-  position:relative;
+  position: relative;
   list-style: none;
 }
 .dropdown-content{
-  
+  list-style: none;
   display: none;
   position: absolute;
   min-width: 200px;
